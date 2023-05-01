@@ -13,7 +13,11 @@ public class IfElse {
         double costs = 5.55;
         System.out.println("Me: Hi Java, did we make money?");
         // Add if-else statement here
-
+        if (sales > costs){
+            System.out.println("Yes, we made money.");
+        }else{
+            System.out.println("No, we didn't make money.");
+        }
         double temperature = 15.5;
         double targetTemperature = 20.0;
         System.out.println("Me: Hi Java, is the temperature colder than our target?");
