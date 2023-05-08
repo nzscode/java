@@ -1,3 +1,5 @@
+package Section5;
+
 import java.util.Scanner;
 
 public class Blackjack {
@@ -41,9 +43,9 @@ public class Blackjack {
         //             - print: your new total is <total>
 
         //       2. Once the player stays, break the loop.
-
-        while(){
-            String userChoice = hitOrStay();
+        Boolean gameOn = true;
+        while(gameOn){
+            String userChoice = "";
             if (userChoice.equals("hit")){
                 int newCard = drawRandomCard();
                 handValue += newCard;
@@ -51,6 +53,7 @@ public class Blackjack {
                 System.out.println("Your new total is:" + handValue);
                 continue;
             }else{
+                gameOn = false;
                 break;
             }
 
@@ -220,15 +223,5 @@ public class Blackjack {
      *   3. Returns the user's option 
      */
 
-    public static String hitOrStay(){
-        System.out.println("Would you like to 'hit' or 'stay'?");
-        String userChoice = scan.nextLine().toLowerCase();
-        while (!userChoice.equals("hit") || !userChoice.equals("stay")){
-            System.out.println("Please write 'hit' or 'stay'");
-        }
-
-
-        return userChoice;
-    }
     }
 
