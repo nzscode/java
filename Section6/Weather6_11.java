@@ -11,8 +11,20 @@ public class Weather6_11 {
         
 
     }
-    public static double[] celciusToFahrenheit(double[] celcius){
-        double[] farhrenheit = Arrays.copyOf(celcius, )
-    }
+    /**
+     * Function name: celsiusToFahrenheit.
+     * @param celsius ( double[] )
+     * @return fahrenheit ( double[] )
+     *
+     * Inside the function:
+     *     1. Creates a double[] array called 'fahrenheit'.
+     *     2. Copies all the values from celsius to fahrenheit.
+     *     3. Updates the fahrenheit values (F = (C/5 * 9) + 32).
+     *     4. return fahrenheit.
+     */
+
+//    public static double[] celciusToFahrenheit(double[] celsius){
+//        double[] fahrenheit = Arrays.copyOf(double[] celsius, doubles fahrenheit);
+//    }
 
 }
