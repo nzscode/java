@@ -38,7 +38,7 @@ public class SignUp2_5 {
         System.out.println("\tUsername: " + userName);
         System.out.println("\tCity: " + city);
         System.out.println("\tCountry: " + country);
-
+        scan.close();
         //close scanner. It's good practice :D ! 
     }
 }
